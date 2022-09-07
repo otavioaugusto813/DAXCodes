@@ -1,0 +1,8 @@
+``` DAX
+
+Centro Selecionado = 
+CALCULATE(
+	SELECTEDVALUE(Centros[Centro], "Vários"),
+		CROSSFILTER('AvaliaçãoMaterialHistórico'[Área de avaliação], Centros[Centro], Both))
+		
+```
